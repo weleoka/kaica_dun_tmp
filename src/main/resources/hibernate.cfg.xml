@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
+<!-- Many different configurations for different server types can be found at:
+https://o7planning.org/en/10201/java-hibernate-tutorial-for-beginners -->
+
+<!-- Foreign key restraint names for hibernate https://stackoverflow.com/a/42736654/3092830 -->
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Class annotations mapping. It's also possible to do with basic mapping files:
+         -->
+
+        <mapping class="kaica_dun_system.User"/>
+
+        <mapping class="kaica_dun.entities.Dungeon"/>
+        <mapping class="kaica_dun.entities.Room"/>
+        <mapping class="kaica_dun.entities.Direction"/>
+        <mapping class="kaica_dun.entities.ItemConsumable"/>
+        <mapping class="kaica_dun.entities.Item"/>
+        <mapping class="kaica_dun.entities.Armor"/>
+        <mapping class="kaica_dun.entities.Weapon"/>
+        <mapping class="kaica_dun.entities.Fighter"/>
+        <mapping class="kaica_dun.entities.Avatar"/>
+        <mapping class="kaica_dun.entities.Monster"/>
+        <mapping class="kaica_dun.entities.Chest"/>
+        <mapping class="kaica_dun.entities.Container"/>
+        <mapping class="kaica_dun.entities.LootContainer"/>
+        <mapping class="kaica_dun.entities.Inventory"/>
+
+    </session-factory>
+
+</hibernate-configuration>
+
+
